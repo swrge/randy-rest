@@ -1,17 +1,19 @@
+[workspace]
+resolver = "2"
+
 [package]
-authors.workspace = true
-categories = ["api-bindings", "asynchronous", "web-programming::http-client"]
-description = "Discord REST API client for the Twilight ecosystem."
-edition.workspace = true
-homepage = "https://twilight.rs/chapter_1_crates/section_2_http.html"
-include.workspace = true
-keywords = ["discord", "discord-api", "twilight"]
-license.workspace = true
 name = "randy-rest"
-publish = true
+description = "Discord REST API client for the Twilight ecosystem."
 repository = "https://github.com/swrge/randy-rest"
-rust-version.workspace = true
 version = "0.1.0"
+edition = "2021"
+authors = ["swrge"]
+include = ["/src"]
+categories = ["api-bindings", "asynchronous", "web-programming::http-client"]
+homepage = "https://twilight.rs/chapter_1_crates/section_2_http.html"
+keywords = ["discord", "discord-api", "twilight"]
+license = "MIT"
+rust-version = '1.84.0'
 
 [dependencies]
 fastrand = { default-features = false, features = ["std"], version = "2" }
